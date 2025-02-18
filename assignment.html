@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Week 7 assignment</title>
+</head>
+
+<body>
+    <!-- part 1 -->
+    <!-- CSS3 transitions and animations -->
+    <div class="container">
+        <h1>Part 1</h1>
+        <h2>CSS3 transitions and animations</h2>
+
+        <button class="btn">Hover me</button>
+
+        <div class="box" tabindex="0">
+            <p>I am a box</p>
+            <h3>Focus me</h3>
+        </div>
+
+        <!-- Elements using keyframes styles -->
+        <div class="keyframes-container">
+            <div class="fadeIn">This text will fade in</div>
+            <div class="fadeOut">This text will fade out</div>
+            <div class="slideIn">This text will slide in</div>
+            <div class="rotate">This text will rotate</div>
+            <div class="bounce">I am Bouncing!</div>
+            <!-- loading spinner -->
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- part 2 -->
+    <div class="part2-container">
+        <!-- JavaScript functions -->
+        <h1>Part 2</h1>
+        <h2>JavaScript functions</h2>
+        <button class="btn" onclick="changeColor()">Click me to change color</button>
+        <button class="btn" onclick="toggleModal()">Toggle Modal</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+        <div class="modal-content">
+            <h2>Modal Title</h2>
+            <p>This is a modal.</p>
+            <button onclick="toggleModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- part 3 -->
+    <div class="part3-container">
+        <!-- JavaScript event listeners -->
+        <h1>Part 3</h1>
+        <h2>Animations with javascript</h2>
+        <button class="btn" onclick="triggerAnimation()">Trigger Animation</button>
+        <div class="animated-element"></div>
+        <button class="btn" onclick="triggerButtonAnimation()">Trigger Button Animation</button>
+        <div class="animated-button"></div>
+        <button class="btn" onclick="triggerCardAnimation()">Trigger Card Animation</button>
+        <div class="animated-card"></div>
+        <button class="btn" onclick="triggerSliderAnimation()">Trigger Slider Animation</button>
+        <div class="animated-slider"></div>
+        <button class="btn" onclick="triggerBallAnimation()">Trigger Ball Animation</button>
+        <div class="animated-ball"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

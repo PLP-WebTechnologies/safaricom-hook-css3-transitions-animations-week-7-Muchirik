@@ -1,0 +1,342 @@
+/* part 1 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #509687;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4caf50; /* Changed color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #333;
+  color: #fff;
+}
+
+/* a box with focus and hover transitions */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: #dab164;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.box h3 {
+  font-size: 2em;
+  color: #333;
+}
+
+.box p {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.box:focus,
+.box:hover {
+  background-color: brown;
+  transform: scale(1.1);
+  outline: none;
+}
+.box:focus {
+  box-shadow: 0 0 10px 5px #333;
+  outline: rgb(6, 195, 94) solid 5px;
+}
+
+/* Styling for keyframes container */
+.keyframes-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Use **CSS animations** with `@keyframes` to create dynamic effects like fading, sliding, or rotating.  */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease infinite;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease infinite;
+}
+.slideIn {
+  animation: slideIn 1s ease infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* loading spinner that rotates */
+.spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.part2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.part2-container h1,
+.part2-container h2 {
+  color: #333;
+}
+
+.part2-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4caf50; /* Changed color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.part2-container button:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Part 3 */
+/* combining css animations with javascript */
+.part3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #aa8d8d;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.part3-container h1,
+.part3-container h2 {
+  color: #333;
+}
+
+.part3-container button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4caf50; /* Changed color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.part3-container button:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Styles for animated element */
+.animated-element {
+  width: 100px;
+  height: 100px;
+  background-color: #4caf50;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.animated-element.animate {
+  transform: translateX(100px);
+}
+
+/* Styles for animated card */
+.animated-card {
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.animated-card.animate-card {
+  transform: rotateY(180deg);
+}
+
+/* Styles for animated slider */
+.animated-slider {
+  width: 300px;
+  height: 50px;
+  background-color: #4caf50;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.animated-slider.animate-slider {
+  transform: translateX(200px);
+}
+
+/* Styles for animated ball */
+.animated-ball {
+  width: 50px;
+  height: 50px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-top: 20px;
+  transition: transform 0.5s ease;
+}
+
+.animated-ball.animate-ball {
+  transform: translateY(100px);
+}
